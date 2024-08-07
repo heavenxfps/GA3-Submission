@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stocks Inc</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Stocks.Inc</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bankinghome.html" style="color: orange;">Banking Services</a></li>
+                <li><a href="stocks.html">Stocks</a></li>
+                <li><a href="insurance.html">Insurance</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="content">
+            <p class="welcome">BANK TRANSFER</p>
+        </div>
+        <div class="content">
+            <p class="account_balance" id="account-balance">ACCOUNT BALANCE: $0</p>
+        </div>
+        <form id="transfer-form">
+            <p class="account">ACCOUNT NUMBER:</p>
+            <input type="text" class="logintext" id="account-number">
+            <br>
+            <p class="account">AMOUNT:</p>
+            <input type="text" class="logintext" id="transfer-amount">
+            <br>
+            <button type="submit" id="transfer-button" class="login-register-button">TRANSFER</button>
+        </form>
+    </main>
+    <script src="transfer.js"></script>
+</body>
+</html>
+

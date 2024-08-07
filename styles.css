@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.logo h1 {
+    margin: 0;
+    color: orange;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.main-options {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.option {
+    background-color: orange;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: black;
+    font-weight: bold;
+    width: 100%;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    align-items: center;
+}
+
+.images .image1,
+.images .image2 {
+    position: relative;
+}
+
+.images img {
+    max-width: 100%;
+    height: auto;
+}
+
+.more {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.more button {
+    background-color: orange;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+}
+
+.welcome {
+    font-size: 55px;
+    font-weight: bold;
+    color: orange;
+}
+
+.account {
+    font-size: 18px;
+    font-weight: bold;
+    color: orange;
+    padding-left: 50px;
+    padding-top: 15px;
+}
+
+.logintext{
+    background: linear-gradient(90deg, #8000ff, #e000ff);
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    width: 40%;
+    box-sizing: border-box;
+    margin-left: 45px;
+}
+
+.login-register-button {
+    background: linear-gradient(90deg, #8000ff, #e000ff);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border-radius: 12px;
+    margin-left: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+
+}
+
+.twofactorpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh; /* Adjust based on your content */
+    padding: 20px;
+}
+
+.smscodetext {
+    background: linear-gradient(90deg, #8000ff, #e000ff);
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    width: 100%; /* Full width within its container */
+    max-width: 400px; /* Limit the maximum width */
+    box-sizing: border-box;
+}
+
+.twofactor {
+    font-size: 55px;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+}
+
+.enter-button {
+    background: linear-gradient(90deg, #8000ff, #e000ff);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-left: 100px ;
+}
+
+.sms-info {
+    font-size: 18px;
+    color: black;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.back-button {
+    background: linear-gradient(90deg, #8000ff, #e000ff);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.account_balance {
+    font-weight: bold;
+    font-size: 30px;
+    color: orange;
+}

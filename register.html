@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stocks Inc</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+        .register-form {
+            max-width: 500px;
+            width: 100%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .register-form h2 {
+            text-align: center;
+            color: orange;
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            color: orange;
+        }
+        .form-control {
+            background-color: #6a0dad;
+            border: none;
+            color: #fff;
+        }
+        .btn-submit {
+            background: linear-gradient(90deg, #8000ff, #e000ff);
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            border-radius: 20px;
+            width: 100%;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        input {
+            background: linear-gradient(90deg, #8000ff, #e000ff);
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            border-radius: 20px;
+            width: 100%;
+            cursor: pointer;
+            font-weight: bold;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Stocks.Inc</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bankinghome.html">Banking Services</a></li>
+                <li><a href="stocks.html">Stocks</a></li>
+                <li><a href="insurance.html">Insurance</a></li>
+                <li><a href="login.html" style="color: orange;">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="register-form">
+            <h2>Register</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="username"><b>Username:</b></label>
+                    <input type="text" class="form-control" id="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="password"><b>Password:</b></label>
+                    <input type="password" class="form-control" id="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="email"><b>Email:</b></label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone"><b>Phone Number:</b></label>
+                    <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <button type="submit" class="btn-submit">REGISTER</button>
+            </form>
+        </div>
+    </main>
+    <script>
+        document.getElementById('register-form').addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        alert('User registered successfully!');
+        document.getElementById('register-form').reset();
+    });
+</script>
+    <script src="script.js"></script>
+</body>
+</html>
